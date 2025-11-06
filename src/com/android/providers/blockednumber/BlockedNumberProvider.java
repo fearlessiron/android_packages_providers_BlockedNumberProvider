@@ -430,8 +430,10 @@ public class BlockedNumberProvider extends ContentProvider {
 
         final String inE164 = Utils.getE164Number(getContext(), phoneNumber, null); // may be empty.
 
-        if (phoneNumber.startsWith("+44") || phoneNumber.startsWith("0044") || inE164.startsWith("+44")) {
-            Log.i(TAG, String.format("isBlocked: BLOCKED COUNTRY; number=%s, e164=%s",
+        if (phoneNumber.startsWith("+44") || phoneNumber.startsWith("0044") || inE164.startsWith("+44")
+			|| phoneNumber.startsWith("+4932") || phoneNumber.startsWith("004932")
+			|| inE164.startsWith("+4932")) {
+            Log.i(TAG, String.format("isBlocked: BLOCKED COUNTRY/AREA; number=%s, e164=%s",
                     phoneNumber,
                     inE164));
             return true;
