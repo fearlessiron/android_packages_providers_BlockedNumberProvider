@@ -433,6 +433,8 @@ public class BlockedNumberProvider extends ContentProvider {
         if (phoneNumber.startsWith("+44") || phoneNumber.startsWith("0044") || inE164.startsWith("+44")
 			|| phoneNumber.startsWith("+4932") || phoneNumber.startsWith("004932")
 			|| inE164.startsWith("+4932")
+			|| phoneNumber.startsWith("+493033075") || phoneNumber.startsWith("00493033075")
+			|| inE164.startsWith("+493033075")
 			|| phoneNumber.startsWith("+49282278498") || phoneNumber.startsWith("0049282278498")
 			|| inE164.startsWith("+49282278498")) {
             Log.i(TAG, String.format("isBlocked: BLOCKED COUNTRY/AREA; number=%s, e164=%s",
