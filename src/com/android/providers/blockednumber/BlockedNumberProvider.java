@@ -435,6 +435,10 @@ public class BlockedNumberProvider extends ContentProvider {
 			|| inE164.startsWith("+4932")
 			|| phoneNumber.startsWith("+493033075") || phoneNumber.startsWith("00493033075")
 			|| inE164.startsWith("+493033075")
+			|| phoneNumber.startsWith("+43664785") || phoneNumber.startsWith("0043664785")
+			|| inE164.startsWith("+43664785")
+			|| phoneNumber.startsWith("+43676751") || phoneNumber.startsWith("0043676751")
+			|| inE164.startsWith("+43676751")
 			|| phoneNumber.startsWith("+49282278498") || phoneNumber.startsWith("0049282278498")
 			|| inE164.startsWith("+49282278498")) {
             Log.i(TAG, String.format("isBlocked: BLOCKED COUNTRY/AREA; number=%s, e164=%s",
